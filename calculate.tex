@@ -1,0 +1,485 @@
+%!TEX program = xelatex
+\documentclass[UTF8]{ctexart}
+\title{数学运算大赛}
+\author{六盘水市三中数学社}
+\date{}
+
+\usepackage{geometry}
+\geometry{margin = 1.4in}
+\usepackage{xcolor}
+\usepackage{amsmath, amssymb}
+\usepackage{hologo}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\ifxetex\else
+  \usepackage{CJKspace}
+\fi
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title \par}{\Huge \bfseries \@title \par}{}{}
+\makeatother
+
+\newcommand{\XeLaTeX}{\hologo{XeLaTeX}}
+\newcommand{\pdfLaTeX}{\hologo{pdfLaTeX}}
+\renewcommand{\CTeX}{\ensuremath{\mathbb{C}}\!\TeX}
+\newcommand{\mdesc}[1]{{\sffamily\kaishu\color{red} #1}}
+\newcommand{\myem}[1]{{\bfseries\color{red} #1}}
+\newcommand{\myemph}[1]{{\sffamily\kaishu\color{red!80!orange} #1}}
+\newcommand{\Warning}{\myem{\Large \rule{0pt}{1.4em}内部资料，请勿外传}}
+\newcommand{\warning}{\cleaders\hbox to \linewidth{\hss\Warning\hss}\vfill}
+
+\begin{document}
+\maketitle
+\warning
+\clearpage
+
+\section{运算大赛赛题第一轮}
+
+\noindent 1. 已知方程组
+
+\begin{equation*}
+\left\{
+\begin{aligned}
+x^2+2y^2=8&,& \\
+y=kx+4& &
+\end{aligned}
+\right.
+\end{equation*}
+中，$k$为常数，其解有$(x_1,y_1)$、$(x_2,y_2)$. 试化简$\Delta>0$和$y_1\cdot y_2$.
+\vspace{3cm}
+
+
+1答案：$\Delta>0$ $\Rightarrow$ $k^2>\dfrac32$\;($k<-\dfrac{\sqrt6}2$或$k>\dfrac{\sqrt6}2)$.
+  $$y_1\cdot y_2=\dfrac{-40k^2}{2k^2+1}+16=\dfrac{16-8k^2}{2k^2+1}.$$
+
+
+  \newpage
+
+\noindent 2. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ y=k(x-1)&,& \\
+ 3x^2+4y^2=12& &
+\end{aligned}
+\right.
+\end{equation*}中，$k$为常数， $x_1$、$x_2$为方程组的两个根. \\
+试求$x_1+x_2$ 和$x_1\cdot x_2$ .
+ \vspace{3cm}
+
+   
+2答案： $$x_1+ x_2=\dfrac{8k^2}{4k^2+3}=2-\dfrac{6}{4k^2+3}.$$
+ $$x_1\cdot x_2=\dfrac{4k^2-12}{4k^2+3}=1-\dfrac{15}{4k^2+3}.$$
+  
+
+ \newpage
+
+\noindent 3. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ y=kx+b&,& \\
+ y^2=8x& &
+\end{aligned}
+\right.
+\end{equation*}中$k$、$b$为常数， $x_1$、$x_2$为方程组的两个根. \\
+(1)化简 $\Delta>0$;\\
+(2)求$x_1+ x_2$和$x_1\cdot x_2$.\vspace{3cm}
+
+%
+3答案：$\Delta>0$ $\Rightarrow$ $kb<2$.\\
+$$x_1+ x_2=\dfrac{8-2kb}{k^2}$$
+ $$x_1\cdot x_2=\dfrac{b^2}{k^2}.$$
+
+
+ \newpage
+
+\noindent 4. 关于$x$、$y$的方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ \dfrac{x^2}4+\dfrac{y^2}m=n&,& \\
+ y=x+m & &
+\end{aligned}
+\right.
+\end{equation*}中，$m\neq4$、$m\neq n\neq 0$，$x_1$、$x_2$为方程组的两个根. 化简$\dfrac{x_1+ x_2}{x_1\cdot x_2}$ 的值.\vspace{3cm}
+
+   
+4答案： $$\dfrac{x_1+ x_2}{x_1\cdot x_2}=\dfrac{2}{n-m}.$$
+
+\newpage
+
+ \noindent 5. 直线$OB$方程为$y=-\dfrac1ax$，直线$BF$方程为$y=\dfrac1a(x-c)$.  \\
+ 求$B$ 点的坐标.\vspace{3cm}
+
+   
+5答案：$B(\dfrac{c}{2},-\dfrac{c}{2a}).$
+
+\newpage
+\section{运算大赛赛题第二轮}
+
+\noindent 1. 关于$x$、$y$的方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ y=kx+m&,& \\
+ \dfrac{x^2}{3}+\dfrac{y^2}2=1.& &
+\end{aligned}
+\right.
+\end{equation*} $x_1$、$x_2$为其两个根. \\
+ (1)化简$\Delta>0$;\\
+ (2)求$x_1+x_2$ 和$x_1\cdot x_2$ 的值.
+\vspace{3cm}
+
+  1.答案：
+  
+  $\Delta>0$ $\Rightarrow$ $3k^2-m^2+2>0.$
+    
+  
+  $$x_1+ x_2=\dfrac{-6km}{2+3k^2}.$$
+  
+  $$x_1\cdot x_2=\dfrac{3(m^2-2)}{2+3k^2}.$$
+
+
+\newpage
+
+ \noindent 2. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ y=-2(x-\sqrt{5})&,& \\
+ 15x^2-32\sqrt5x+84=0& &
+\end{aligned}
+\right.
+\end{equation*}中， $(x_1,y_1)$、$(x_2,y_2)$为其两组解. 试求$(x_1,y_1)$与$(x_2,y_2)$.
+
+   
+2答案： 
+
+$$(\dfrac{6\sqrt5}{5},-\dfrac{2\sqrt5}{5}),$$
+ 
+$$(\dfrac{14\sqrt5}{15},\dfrac{2\sqrt5}{15}).$$
+
+
+\newpage
+
+\noindent 3. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+ y=kx+m&,& \\
+\dfrac{x^2}{4}+\dfrac{y^2}3=1 & &
+\end{aligned}
+\right.
+\end{equation*}中， $x_1$、$x_2$为其两个根. \\
+ (1)化简$\Delta>0$;\\
+ (2)求$x_1+x_2$ 和$x_1\cdot x_2$ 的值.
+\vspace{3cm}
+
+  
+  3答案：
+  $\Delta>0$ $\Rightarrow$ $4k^2-m^2+3>0.$
+    
+  $$x_1+ x_2=\dfrac{-8km}{4k^2+3}.$$
+  
+  $$x_1\cdot x_2=\dfrac{4m^2-12}{4k^2+3}.$$
+
+\newpage
+
+
+ \noindent 4. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+x=my+4 &,& \\
+\dfrac{x^2}{4}+\dfrac{y^2}3=1 & &
+\end{aligned}
+\right.
+\end{equation*}中， $y_1$、$y_2$为其两个根. \\
+ 求$y_1+y_2$ 及$y_1\cdot y_2$ .
+\vspace{3cm}
+
+   
+4答案：    
+$$y_1+ y_2=\dfrac{-24m}{3m^2+4}.$$
+  
+$$y_1\cdot y_2=\dfrac{36}{3m^2+4}.$$
+
+\newpage
+
+\noindent 5. 在方程组\begin{equation*}
+\left\{
+\begin{aligned}
+y=kx+m &,& \\
+ \dfrac{x^2}4+\dfrac{y^2}3=1& &
+\end{aligned}
+\right.
+\end{equation*}中$k$，$m$为常数.  当$\Delta=0$ 时，用$k$、$m$表示其交点的横坐标.
+\vspace{3cm}
+
+5.答案： $$(-\dfrac{4k}m,\dfrac3m).$$
+
+  
+\newpage
+\section{积分赛} % (fold)
+
+
+\noindent 1. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+    x=my+\dfrac{m^2}{2} &,& \\
+     \dfrac{x^2}{m^2}+y^2=1& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$m$为常数， $y_1$、$y_2$为其两个根. 试求$y_1$ 和$y_2$ 的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 1.答案： $$y_1=\dfrac{-m-\sqrt{8-m^2}}{4},$$
+     $$y_2=\dfrac{-m+\sqrt{8-m^2}}{4}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent  2. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     \dfrac{x^2}{25}+\dfrac{y^2}{16}=1&,& \\
+     my=nkx+n& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$m$、$n$均为常数且$m\neq0$， $(x_1,y_1)$、$(x_2,y_2)$为其两组解.  
+    当$\dfrac{m}{n}=1$时，求$x_1$ 和$x_2$ 的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\color{red}
+\noindent 2.答案：
+
+$$x_1=\dfrac{-25k-5\sqrt{375k^2+265}}{25k^2+16},$$
+     
+$$x_2=\dfrac{-25k+5\sqrt{375k^2+265}}{25k^2+16}.$$
+}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 3. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     x=my+\sqrt{3}&,& \\
+     \dfrac{x^2}{6}+\dfrac{y^2}{3}=1& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$m$为常数， $(x_1,y_1)$、$(x_2,y_2)$为其两组解. 
+    试求$y_1$ 和$y_2$ 的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\noindent 3.答案： 
+{\color{red}
+$$y_1=\dfrac{-\sqrt{3}m-\sqrt{6+6m^2}}{m^2+2},$$
+     
+$$y_2=\dfrac{-\sqrt{3}m+\sqrt{6+6m^2}}{m^2+2}.$$
+}
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 4.在方程$$\dfrac{a}{m}x^3+9x^2+6mx+m^2=0$$中，
+当$\dfrac{3a^2-9a}{\frac{a-3}{m}}=0$有意义时， 求$x$ 的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 4.答案： $$x=-\dfrac{m}{3}\;(m\neq0).$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 5. 在关于$x$、$y$的方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     y^2=4x&,& \\
+     y=-\frac{y_0}{2}x+b& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，当方程只有一组解时，求$b$与$y_0$的关系.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 5.答案： $$b=-\dfrac{2}{y_0}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 6. 解方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     \dfrac{x}{c}+\dfrac{y}{b}=1&,& \\
+     \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1&,&
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}其中，$a$，$b$，$c$为常数.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 6.答案： $$x_1=\dfrac{2a^2c}{a^2+c^2}; y_1=\dfrac{b(c^2-a^2)}{a^2+c^2}.$$
+     $$x_2=0; y_2=b.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 7. 在关于$x$、$y$的方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     \dfrac{x^2}{a^2}+\frac{y^2}{b^2}=1&,& \\
+     y=\frac12x-\frac12& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$a\neq0$，$b\neq0$， $(x_1,y_1)$、$(x_2,y_2)$为其两组解. 求$y_1$ 和$y_2$.\vspace{3cm}
+    
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 7.答案： $$y_1=\dfrac{-2b^2-ab\sqrt{a^2+4b^2-1}}{a^2+4b^2},$$
+     $$y_2=\dfrac{-2b^2+ab\sqrt{a^2+4b^2-1}}{a^2+4b^2}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 8. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+    \dfrac{x^2}{4}-\dfrac{y^2}{3}=1 &,& \\
+     y=kx-5& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中$k$为常数，有两组解$(x_1,y_1)$、$(x_2,y_2)$. 求$y_1$ 和$y_2$.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 8.答案： $$y_1=\dfrac{15-4k\sqrt{21-3k^2}}{4k^2-3},$$
+     $$y_2=\dfrac{15+4k\sqrt{21-3k^2}}{4k^2-3}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 9. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+    y^2=3px &,& \\
+     y=x+m& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$p$、$m$为常数，有两组解$(x_1,y_1)$、$(x_2,y_2)$. 试求$y_1$ 和$y_2$的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 9.答案： $$y_1=\dfrac{3p-\sqrt{9p^2-12pm}}{2},$$
+     $$y_2=\dfrac{3p+\sqrt{9p^2-12pm}}{2}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 10. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     x^2+3y^2=6&,& \\
+     kx+2y-4=0& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$k$为常数， $(x_1,y_1)$、$(x_2,y_2)$为其两组解. 求$y_1$ 和$y_2$的值.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 10.答案： $$y_1=\dfrac{8-k\sqrt{18k^2-24}}{3k^2+4},$$
+     $$y_2=\dfrac{8+k\sqrt{18k^2-24}}{3k^2+4}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 11. 在关于$x$、$y$的方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     mx^2+ny^2=2&,& \\
+     y=-kx+1&,&
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}求$x_1$ 和$x_2$.\vspace{3cm}
+    
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 11.答案： $$x_1=\dfrac{-kn-\sqrt{2k^2n-mn+2m}}{k^2n+m},$$
+     $$x_2=\dfrac{-kn+\sqrt{2k^2n-mn+2m}}{k^2n+m}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 12. 在方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     3x^2-y^2-3=0&,& \\
+     y=-2x+m& &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}有两组解$(x_1,y_1)$、$(x_2,y_2)$. 求$y_1^2$ 和$y_2^2$.\vspace{3cm}
+    
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 12.答案：$$y_1^2=21m^2-12-12m\sqrt{3m^2-3},$$
+     $$y_2^2=21m^2-12+12m\sqrt{3m^2-3}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 13. 方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     x^2-\dfrac{y^2}{4}=1&,& \\
+     kx-y+b=0 & &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}中，$k$、$b$为常数， $(x_1,y_1)$、$(x_2,y_2)$为其两组解. 求$x_1$ 和$x_2$.\vspace{3cm}
+    
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 13.答案：$$y_1=\dfrac{kb-2\sqrt{b^2-k^2+4}}{4-k^2},$$
+     $$y_2=\dfrac{kb+2\sqrt{b^2-k^2+4}}{4-k^2}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \newpage
+    
+\noindent 14. 关于$x$、$y$的方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+     y=kx+m&,& \\
+     \dfrac{x^2}{a^2}+\frac{y^2}{b^2}=1 & &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}{\color{red}有两组解 $(x_1,y_1)$、$(x_2,y_2)$，} 求$x_1$ 和$x_2$.\vspace{3cm}
+    
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 14.答案：$$x_1=\dfrac{-a^2km-a\sqrt{2a^2k^2m^2-a^2b^2k^2+b^2m^2+b^4}}{a^2k^2+b^2},$$
+     $$x_2=\dfrac{-a^2km+a\sqrt{2a^2k^2m^2-a^2b^2k^2+b^2m^2+b^4}}{a^2k^2+b^2}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    
+\noindent 15. 关于$x$、$y$的方程组\begin{equation*}
+    \left\{
+    %%%%%%%%%%%%%%%%%%%%%%
+    \begin{aligned}
+    x=my+\sqrt{3} &,& \\
+    \dfrac{x^2}{6}+\frac{y^2}{3}=1 & &
+    \end{aligned}
+    %%%%%%%%%%%%%%%%%%%%%%
+    \right.
+    \end{equation*}{\color{red}有两组解$(x_1,y_1)$、$(x_2,y_2)$，} 求$x_1$ 和$x_2$.\vspace{3cm}
+    
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent 15.答案：$$x_1=\dfrac{2\sqrt3-m\sqrt{6m^2+6}}{m^2+2},$$
+     $$x_2=\dfrac{2\sqrt3+m\sqrt{6m^2+6}}{m^2+2}.$$
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    
+
+
+\end{document}
